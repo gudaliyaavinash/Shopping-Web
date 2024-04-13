@@ -32,7 +32,7 @@ const Heder = () => {
     return (
         <>
             <header>
-                <div className="bg-red-500 p-s z-[999]">
+                <div className="bg-white p-s z-[999]">
                     <div className=" mx-auto  w-full max-w-screen-xl">
                         <div className='flex items-center max-_350_:justify-between py-2 gaap mx-4'>
                             <div className="w-[10%] w-img max-_377_:gap-[5px] just-between flex items-center">

@@ -9,9 +9,7 @@ import { FaStar } from "react-icons/fa";
 import pin from './imag/pin.webp'
 const Home = () => {
     const Alldata = useSelector(state => state.counter)
-    // console.log(Alldata);
     const dispatch = useDispatch()
-    // if (Alldata.tot_cart1) {
     return (
         <>
             <div className="w-full mt-[75px]">
@@ -55,7 +53,7 @@ const Home = () => {
                                         <p className='font-bold ms-3'>Special Price<span className='font-[400]'>Get extra 5% off (price inclusive of cashback/coupon)</span></p>
                                     </span>
                                 </div>
-                                <div className="flex max-_377_:gap-[0px] max-_377_:mx-3 max-_377_:justify-between but-gap">
+                                <div className="flex max-_377_:gap-[0px] gap-[100px] max-_377_:mx-3 max-_377_:justify-between but-gap">
                                     <button className='bg-yellow-500 p-2 text-white fs font-bold flex items-center batn' onClick={() => dispatch(Add(Alldata.data.index))}><FaShoppingCart className='me-2' />ADD TO CARD</button>
                                     <button onClick={() => dispatch(Add(Alldata.data.index))} className='bg-red-500 fs p-2 text-white batn font-bold flex items-center'><GiElectric className='me-2' /><Link to='/Cart' className='text-white decoration'>BUY NOW</Link></button>
                                 </div>
