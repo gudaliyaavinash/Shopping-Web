@@ -33,14 +33,15 @@ const Heder = () => {
     }
     const SearchHandler = (e) => {
         
+        let alldata_ = [...dub]
 
-        let add = alldata.cart.filter((el,i) => (el.name.includes(e.target.value)));
+        alldata_ = alldata_.filter((el,i) => (el.name.includes(e.target.value)));
        
-        Disp(SerchCart([...add]))
+        Disp(SerchCart([...alldata_]))
 
-        if(e.target.value == ""){
-            Disp(SerchCart([...dub]))
-        }
+        // if(e.target.value == ""){
+        //     Disp(SerchCart([...dub]))
+        // }
     }
 
     useEffect(()=>{
