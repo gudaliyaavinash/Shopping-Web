@@ -14,6 +14,8 @@ import { useSelector , useDispatch } from 'react-redux';
 import { FaBars } from "react-icons/fa";
 import Cart from './Cart';
 import { SerchCart, addCard } from './counter/counterSlice';
+import { dub } from './counter/counterSlice';
+
 let Data = []
 const Heder = () => {
     const alldata = useSelector(state => state.counter)
@@ -29,6 +31,21 @@ const Heder = () => {
         }
         i++
     }
+    const SearchHandler = (e) => {
+        
+
+        let add = alldata.cart.filter((el,i) => (el.name.includes(e.target.value)));
+       
+        Disp(SerchCart([...add]))
+
+        if(e.target.value == ""){
+            Disp(SerchCart([...dub]))
+        }
+    }
+
+    useEffect(()=>{
+
+    },[])
     return (
         <>
             <header>
@@ -56,7 +73,7 @@ const Heder = () => {
                                 <Link to='/'><img src={img1} alt="" className='w-[50px]' /></Link>
                             </div>
                             <Form className="w-[100%] search-w flex justify-center items-center">
-                                <input
+                                <input onChange={SearchHandler}
                                     type="search"
                                     placeholder="Search"
                                     className="me-2 bg-gray-300 w-[60%] max-_427_:w-[90%] py-2 ps-4 pe-5 outline-none rounded-[50px]"
