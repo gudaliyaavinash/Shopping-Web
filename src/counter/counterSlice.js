@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 export let dub  = [
   {
-    name: "PUMA puma shoes Shoes Men men",
+    name: "PUMA puma puma shoes Shoes Men men",
     name_1: "PUMA",
     Removeitem: 1,
     Removeitem1: 1,
