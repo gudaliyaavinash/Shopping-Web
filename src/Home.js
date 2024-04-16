@@ -21,7 +21,7 @@ const Home = () => {
                             </div>
                             <div className="w-[70%] width ps-4">
                                 <div className="mt-3">
-                                    <p className='text-[#878787] text-[20px] font-bold m-0'>{Alldata.data.name}</p>
+                                    <p className='text-[#878787] text-[20px] font-bold m-0'>{Alldata.data.name_1}</p>
                                     <p className='m-0' >{Alldata.data.Title}</p>
                                     <p className='mt-1 text-[#26a541] Special-none mb-1 font-bold'>Special price</p>
                                     <div className="flex items-center">

@@ -12,7 +12,6 @@ import {
   Link
 } from "react-router-dom";
 import Demo from './Demo';
-import PuzzleGame from './generateRandomNumbers ';
 import { useRef, useState } from 'react';
 function App() {
   return (
@@ -37,7 +36,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      {/* <PuzzleGame /> */}
     </div>
   );
 }

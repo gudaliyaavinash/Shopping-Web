@@ -70,7 +70,7 @@ const Cart = () => {
                               <img src={el.image} alt="" width='100%' />
                             </div>
                             <div className="p">
-                              <h1 className='font-bold name-m'>{el.name}</h1>
+                              <h1 className='font-bold name-m'>{el.name_1}</h1>
                               <p>{el.Title}</p>
                               <div className="flex m-t items-baseline">
                                 <del className='line-through decoration-1'>₹{el.price_cart}</del>

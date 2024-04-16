@@ -3,7 +3,8 @@ import { createSlice } from '@reduxjs/toolkit'
 
 export let dub  = [
   {
-    name: "PUMA",
+    name: "PUMA puma shoes Shoes Men men",
+    name_1: "PUMA",
     Removeitem: 1,
     Removeitem1: 1,
     index : 0 ,
@@ -25,7 +26,8 @@ export let dub  = [
     cart_5: 0,
   },
   {
-    name: "KILLER ",
+    name: "KILLER killer Black Track Pants black track pants",
+    name_1:"KILLER ",
     Removeitem: 1,
     Removeitem1: 1,
     index : 1 ,
@@ -47,7 +49,8 @@ export let dub  = [
     cart_5: 0,
   },
   {
-    name: "TRIPR  ",
+    name: "TRIPR tripr Sweatshirt sweatshirt Shirt shirt",
+    name_1:"TRIPR  ",
     Removeitem: 1,
     Removeitem1: 1,
     image: require("../imag/tshirt.webp"),
@@ -69,7 +72,8 @@ export let dub  = [
     cart_5: 0,
   },
   {
-    name: "TIMEX",
+    name: "TIMEX timex Analog Watch Men men analog watch",
+    name_1: "TIMEX",
     Removeitem: 1,
     index : 3,
     Removeitem1: 1,
@@ -91,7 +95,8 @@ export let dub  = [
     cart_5: 0,
   },
   {
-    name: "boAt Airdopes",
+    name: "BoAt Airdopes boAt airdopes ",
+    name_1:"boAt Airdopes",
     Removeitem: 1,
     index : 4,
     Removeitem1: 1,
@@ -113,7 +118,8 @@ export let dub  = [
     cart_5: 0,
   },
   {
-    name: "New Balance",
+    name: "New Balance new balance Shoes shoes Black black",
+    name_1: "New Balance",
     image: require("../imag/Footwear 2.webp"),
     token: 1,
     index : 5,
@@ -135,7 +141,8 @@ export let dub  = [
     cart_5: 0,
   },
   {
-    name: "Clown ",
+    name: "Clown clown Trousers trousers Black Pants black pants",
+    name_1: "Clown ",
     image: require("../imag/pant.webp"),
     token: 1,
     index : 6,
@@ -157,7 +164,8 @@ export let dub  = [
     cart_5: 0,
   },
   {
-    name: "Titan",
+    name: "Titan titan Mechanical Analog Watch mechanical analog watch",
+    name_1: "Titan",
     image: require("../imag/Watch 1.webp"),
     token: 1,
     index : 7,

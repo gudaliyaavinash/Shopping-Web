@@ -39,14 +39,8 @@ const Heder = () => {
        
         Disp(SerchCart([...alldata_]))
 
-        // if(e.target.value == ""){
-        //     Disp(SerchCart([...dub]))
-        // }
     }
 
-    useEffect(()=>{
-
-    },[])
     return (
         <>
             <header>

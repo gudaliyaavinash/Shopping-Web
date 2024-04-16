@@ -20,7 +20,7 @@ const Demo = () => {
                                                 <img src={el.image} alt="" className='h-[350px] w-[100%] h'/>
                                             </div>
                                             <div className="details">
-                                                <p className='text-[#878787] text-[16px] font-bold m-0'>{el.name} </p>
+                                                <p className='text-[#878787] text-[16px] font-bold m-0'>{el.name_1} </p>
                                                 <p className='title m-0' >{el.Title}</p>
                                                 <div className="flex">
                                                     <p className=' me fs  text-[#212121] font-bold text-[16px]'>₹{eval(el.price-(el.price * el.discount /100).toFixed(0))}</p>
