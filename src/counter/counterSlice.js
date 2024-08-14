@@ -1,6 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-
-
 export let dub  = [
   {
     name: "PUMA puma puma shoes Shoes Men men",

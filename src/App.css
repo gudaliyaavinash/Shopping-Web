@@ -504,6 +504,10 @@ body {
   .h {
     height: 250px;
   }
+
+  .Hidden{
+    display: none;
+  }
 }
 @media (max-width:320px) {
   .h {

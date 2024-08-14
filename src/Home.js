@@ -12,9 +12,9 @@ const Home = () => {
     const dispatch = useDispatch()
     return (
         <>
-            <div className="w-full mt-[75px]">
+            <div className="w-full">
                 <div className="w-1140">
-                    <div className="flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-start items-center h-[100vh]">
                         <div className="flex flex-wrap mb-3">
                             <div className="w-[30%] width-img">
                                 <img src={Alldata.data.image} alt="" width='100%' className='border-gray-300 h-[100%] border-1 p-3' />

@@ -10,7 +10,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { IoSearch } from "react-icons/io5";
 import { BsCart3 } from "react-icons/bs";
 import { Link } from 'react-router-dom/cjs/react-router-dom';
-import { useSelector , useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { FaBars } from "react-icons/fa";
 import Cart from './Cart';
 import { SerchCart, addCard } from './counter/counterSlice';
@@ -27,16 +27,16 @@ const Heder = () => {
             document.getElementsByClassName('menu')[0].style.height = "0px"
         }
         else {
-            document.getElementsByClassName('menu')[0].style.height = "155px"
+            document.getElementsByClassName('menu')[0].style.height = "120px"
         }
         i++
     }
     const SearchHandler = (e) => {
-        
+
         let alldata_ = [...dub]
 
-        alldata_ = alldata_.filter((el,i) => (el.name.includes(e.target.value)));
-       
+        alldata_ = alldata_.filter((el, i) => (el.name.includes(e.target.value)));
+
         Disp(SerchCart([...alldata_]))
 
     }
@@ -44,16 +44,15 @@ const Heder = () => {
     return (
         <>
             <header>
-                <div className="bg-white p-s z-[999]">
+                <div className=" p-s z-[999] bg-white">
                     <div className=" mx-auto  w-full max-w-screen-xl">
                         <div className='flex items-center max-_350_:justify-between py-2 gaap mx-4'>
-                            <div className="w-[10%] w-img max-_377_:gap-[5px] just-between flex items-center">
+                            <div className="w-[30%] w-img max-_377_:gap-[5px] just-between flex items-center">
                                 <div id='add' className='p-r me-2'>
                                     <FaBars onClick={MenuHandler} className='text-black text-xl '></FaBars>
                                     <div className="">
                                         <ul className=' menu  p-0 demo p-a z-[999]'>
                                             <li onClick={MenuHandler} className='font-bold my-[10px]'><Link to='/' className='decoration text-white font-bold'>Home</Link></li>
-                                            <li onClick={MenuHandler} className='font-bold my-[10px]'><Link to='/Signup' className='decoration text-white font-bold'>Sign Up</Link></li>
                                             <li onClick={MenuHandler} className='font-bold my-[10px]'><Link to='/Login' className=' decoration text-white font-bold'>Login</Link></li>
                                             <li onClick={MenuHandler} className='font-bold my-[12px]'><Link to='/Cart' className='flex items-center font-bold decoration text-white decoration'><BsCart3 className='me-2 text-xl relative' />Cart
                                                 <span class="position-absolute ms-[18px] mb-[8px] translate-middle badge rounded-pill bg-danger" style={{
@@ -65,7 +64,10 @@ const Heder = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <Link to='/'><img src={img1} alt="" className='w-[50px]' /></Link>
+                                <div className=" flex items-center">
+                                    <Link to='/'><img src={img1} alt="" className='w-[50px] ' /></Link>
+                                    <h6 className='text-[25px] Hidden ms-3 font-mono mb-0 font-bold'>SwiftCart</h6>
+                                </div>
                             </div>
                             <Form className="w-[100%] search-w flex justify-center items-center">
                                 <input onChange={SearchHandler}
@@ -80,7 +82,7 @@ const Heder = () => {
                                 <div className=' duration-500 transition-all'>
                                     <ul className='flex demo max-lg:bg-white m-0 gap-[15px] p-0'>
                                         <li className='font-bold none'><Link to='/' className='a decoration none text-black font-bold'>Home</Link></li>
-                                        <li className='font-bold none'><Link to='/Signup' className='a decoration none text-black font-bold'>Sign Up</Link></li>
+                                        {/* <li className='font-bold none'><Link to='/Signup' className='a decoration none text-black font-bold'>Sign Up</Link></li> */}
                                         <li className='font-bold none '><Link to='/Login' className='a decoration none text-black font-bold'>Login</Link></li>
                                         <li className='font-bold  te'><Link to='/Cart' className='flex items-center font-bold text-black a decoration'><BsCart3 className='me-2 text-xl relative' />Cart
                                             <span class="position-absolute ms-[18px] mb-[8px] translate-middle badge rounded-pill bg-danger" style={{
