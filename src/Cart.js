@@ -2,12 +2,14 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import "./App.css"
 import { Remove, cartdec, cartinc } from './counter/counterSlice'
-import { Link } from 'react-router-dom/cjs/react-router-dom'
 import { FaStar } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 const Cart = () => {
+
   const alldata = useSelector(state => state.counter)
   // console.log(alldata.data);
-  const disp = useDispatch()
+  const disp = useDispatch();
+
   let totalprice = 0;
   let discount = 0;
   let charge = 0;
@@ -30,7 +32,7 @@ const Cart = () => {
   if (alldata.tot_cart) {
     return (
       <div>
-        <div className="w-full bg-gray-200">
+        <div className="w-full bg-gray-200 pb-[10px] mt-[55px]">
           <div className="w-1140">
             <h1 className='text-center font-bold mb-4 text-6xl'>Cart</h1>
             <div className="flex b flex-wrap flex-row-reverse just-center justify-between">
